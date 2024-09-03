@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="container-form">
+            <h1 class="container-heading">Get in touch</h1>
+            <hr>
+            <input type="hidden" name="access_key" value="c6113998-a6cc-4131-8105-d86003901722">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <textarea id="textarea" name="message" placeholder="Enter your message" required></textarea>
+            <input class="submit-btn" type="submit" value="Submit">
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
